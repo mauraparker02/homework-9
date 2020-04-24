@@ -10,6 +10,28 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+    
+//in the inquier you ask for 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const Joe= new Manager("joe", 22, "joe@joe.com", "(111)-111-1111")
+// console.log(Joe); 
+
+
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -33,3 +55,60 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+
+//inquierer should prompt user to build an engineering team
+//first you want to set up classes for 
+    //employee, 
+    //parent class of manager, engineer & intern 
+        //Employees 
+        //  * name
+        //  * id
+        //  * email
+        //  * getName()
+        //  * getId()
+        //  * getEmail()
+        //  * getRole() // Returns 'Employee'
+                //manager 
+                    // * officeNumber
+                    //* getRole() // Overridden to return 'Manager'
+                //Engineer 
+                    //github // github username 
+                    //getGithub()
+                    //getRole() // Overridden to return 'Engineer'
+                //Intern 
+                    //school 
+                    //getSchool()    
+                    //getRole() // Overridden to return 'Intern'   
+
+        //you must write fs to use a variable 
+        //
+
+    // class Employee {
+    //     constructor(name, id, email){
+    //         this.name= name; 
+    //         this.id= id; 
+    //         this.email= email; 
+    //     }
+    //    getname(){
+    //        return this.name;
+    //    }
+    //    getId(){
+    //        return this.id; 
+    //    }
+    //    getEmail(){
+    //        return this.email; 
+    //    }
+    // };
+
+    
+    // class Manager extends Employee {
+    //     constructor(name, id, email, officeNumber){
+    //     super (name, id, email)
+    //     this.role= "Manager"; 
+    //     this.officeNumber= officeNumber; 
+    //     }
+    //     getRole(){
+    //         return this.role; 
+    //     }; 
+    // };
